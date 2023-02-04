@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{ /* the size of the link */
+    font-size: 16px;
+}
+a{
+    text-decoration:none;
+}
+header{ /* color of the shadow of the header */
+    display: flex;
+    width: 100%;
+    box-shadow: 2px 3px 5px #ccc;
+}
+.public-width{
+    width: 80%;
+    margin: auto;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%; 
+    padding: 20px 0; 
+    margin: auto;
+    
+}
+.logo h3{ /* color of the title */
+   font-size: 22px;
+   letter-spacing: 2px; 
+   color: pink;
+}
+.nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 80px;
+}
+.nav ul li a{ /* color of the direct link? */
+    color: #333333;
+}
+.nav ul li a:hover{ /*this is the color that the link(or smth) will be if u move your mouse onto it*/
+    color: red;
+}
