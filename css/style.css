@@ -33,13 +33,24 @@ p { /*button font*/
     font-family: optima;
 }
 .dropdown{
-
-    margin-right: 100px;
-    
+    display: flex;
+}
+.dropbtn1{
+    margin-left: 400px;
+    font-family: optima;
+    border: 5px outset #f3f3f3;
+    background-color:#f3f3f3;
+    height:50px;
+    width:200px;
+    cursor:pointer;
     }
-.dropdown{
-
-    margin-left: 50px;
+.dropbtn2{
+    margin-left: 300px;
+    font-family: optima;
+    border: 5px outset #f3f3f3;
+    background-color:#f3f3f3;
+    height:50px;
+    width:200px;
     
     }
 .header{
