@@ -15,7 +15,13 @@
         <header>
             <div class = "header public-width">
                 <div class = "logo">
+
                         <h1 style="text-align:center;font-family:Fantasy;">SkinCare Check!</h1>
+
+                        <h1>SkinCare Check!</h1>
+                        <h2>A concise, transparent, and straight forward website that allows you to become your own dermatologist.
+                        </h2>
+
                 </div>
                 
                 <div class = "nav">
@@ -34,7 +40,7 @@
             </div>
         </div>
         <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn">Chemical1</button>
+            <button onclick="myFunction()" class="dropbtn"><p></p>Chemical1</button>
             <div id="myDropdown" class="dropdown-content">
               <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
               <a href="#Accutane">Accutane</a>
@@ -56,32 +62,9 @@
 
             </div>
           </div>
-          <script>
-            /* When the user clicks on the button,
-            toggle between hiding and showing the dropdown content */
-            function myFunction() {
-              document.getElementById("myDropdown").classList.toggle("show");
-            }
-            
-            function filterFunction() {
-              var input, filter, ul, li, a, i;
-              input = document.getElementById("myInput");
-              filter = input.value.toUpperCase();
-              div = document.getElementById("myDropdown");
-              a = div.getElementsByTagName("a");
-              for (i = 0; i < a.length; i++) {
-                txtValue = a[i].textContent || a[i].innerText;
-                if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                  a[i].style.display = "";
-                } else {
-                  a[i].style.display = "none";
-                }
-              }
-            }
-            </script>
           <div class="dropdown">
             <button onclick="myFunction()" class="dropbtn">Chemical2</button>
-            <div id="myDropdown" class="dropdown-content">
+            <div id="myDropdown2" class="dropdown-content">
               <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
               <a href="#Accutane">Accutane</a>
               <a href="#AlphaHydroxyAcid">Alpha Hydroxy Acid(AHA)</a>
@@ -102,6 +85,7 @@
 
             </div>
           </div>
+
           <script>
             /* When the user clicks on the button,
             toggle between hiding and showing the dropdown content */
@@ -128,6 +112,7 @@
         
         <button type= "button" onclick="alert('this should redirect to the comparison page')">Compare</button>
 
+
         <!--below is a input algorithm that we dont need but i just tested-->
 
         <div class = "container">
@@ -136,7 +121,6 @@
                 <input type = "something else" placeholder = "Brand: ">
             </div>
         </div>
-        
 
     </body>
     <p>Our vision:

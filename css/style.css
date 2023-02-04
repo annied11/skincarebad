@@ -9,15 +9,39 @@ body{ /* the size of the link */
 a{
     text-decoration:none;
 }
-header{ /* color of the shadow of the header */
-    display: flex;
-    width: 100%;
-    box-shadow: 2px 3px 5px #ccc;
+body {
+    background-color: #e1b0a6 ;
+  }
+  
+h1{ /* color of the shadow of the header */
+    color: #eeece6;
+    font-family: optima;
+    text-align: center;
+    width:100%;
+    border-bottom:1px solid #CCC;
+     }
+h2{
+    color:#664b35;
+    font-size: 15px;
 }
+
 .public-width{
     width: 80%;
     margin: auto;
 }
+p { /*button font*/
+    font-family: optima;
+}
+.dropdown{
+
+    margin-right: 100px;
+    
+    }
+.dropdown{
+
+    margin-left: 50px;
+    
+    }
 .header{
     display: flex;
     justify-content: space-between;
