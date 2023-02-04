@@ -61,7 +61,11 @@
               <a hred="#TranexmicAcid">Tranexmic Acid</a>
               <a hred="#VitaminC">Vitamin C</a>
               <a hred="#VitaminB5">Vitamin B5</a>
-
+              
+              <ul class="dropdown-toggle" value="Fast">
+                <li onclick="dropdown(this.innerHTML);">Fast</li>
+                <li onclick="dropdown(this.innerHTML);">Accurate</li>
+              </ul>
             </div>
           </div>
           <div class="dropdown">
@@ -88,41 +92,12 @@
             </div>
           </div>
 
-          <script>
-            /* When the user clicks on the button,
-            toggle between hiding and showing the dropdown content */
-            function myFunction() {
-              document.getElementById("myDropdown").classList.toggle("show");
-            }
-            
-            function filterFunction() {
-              var input, filter, ul, li, a, i;
-              input = document.getElementById("myInput");
-              filter = input.value.toUpperCase();
-              div = document.getElementById("myDropdown");
-              a = div.getElementsByTagName("a");
-              for (i = 0; i < a.length; i++) {
-                txtValue = a[i].textContent || a[i].innerText;
-                if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                  a[i].style.display = "";
-                } else {
-                  a[i].style.display = "none";
-                }
-              }
-            }
-            </script>
         
         <button type= "button" onclick="alert('this should redirect to the comparison page')">Compare</button>
 
 
         <!--below is a input algorithm that we dont need but i just tested-->
 
-        <div class = "container">
-            <div class = "tit" ?>
-                <input type = "text" placeholder = "Product: ">
-                <input type = "something else" placeholder = "Brand: ">
-            </div>
-        </div>
 
     <script>  
         function myFunction() 
@@ -163,7 +138,16 @@
                 a[i].style.display = "none";
               }
             }
-          }</script>
+          }
+          var dropdown = document.getElementsByClassName('dropdown-toggle')[0],
+            options = document.getElementsById('myinput')[0];
+
+            options.addEventListener("click", function(e) {
+            if (e.target.tagName === 'A') {
+            dropdown.firstChild.textContent = e.target.textContent + ' ';
+              }
+            });
+            </script>
     </body>
     <p>Our vision:
             
