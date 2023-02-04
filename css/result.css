@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 100%;
+    background-color: red;
+    /*box-shadow: 2px 3px 5px #ccc;*/
+}
+.header{
+    width: 80%;
+    padding: 10px, 0;
+    margin: auto;
+    background-color: aqua;
+}
+.logo h3{ /* color of the title */
+    font-size: 22px;
+    letter-spacing: 2px; 
+    color: pink;
+ }
+ .nav ul li{
+     list-style: none;
+     display: inline-block;
+     margin-left: 80px;
+ }
