@@ -10,9 +10,28 @@ a{
     text-decoration:none;
 }
 body {
+    
     background-color: #e1b0a6 ;
+    /*
+    background : linear-gradient(deg, #e3c5eb, #a9c1ed);
+    overflow: hidden;
+    */
   }
-  
+  /*
+.container{
+    position: relative;
+    z-index: 1;
+    background-color: #f1f1f1;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 350px;
+    box-shadow: 0 5px 20px rbga(0,0,0,0.1);
+}
+*/
+
 h1{ /* color of the shadow of the header */
     color: #eeece6;
     font-family: optima;
