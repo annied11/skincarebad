@@ -81,3 +81,10 @@ header{ /* color of the shadow of the header */
 .nav ul li a:hover{ /*this is the color that the link(or smth) will be if u move your mouse onto it*/
     color: red;
 }
+.banner img{
+    /* make sure the top isnt weird & so that the top isnt align with the shadow */
+    width: 100%;
+    height: 350px;
+    margin: 20px 0;
+    object-fit: cover;
+}
