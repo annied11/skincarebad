@@ -36,13 +36,12 @@
         </header>
 
         <div class="dropdown">
-
-            <button onclick="myFunction()" class="dropbtn1"><p></p>Chemical 1</button>
+            <button onclick="myFunction()" class="dropbtn"><p></p>Chemical1</button>
             <div id="myDropdown" class="dropdown-content">
               <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
               <a href="#Accutane">Accutane</a>
               <a href="#AlphaHydroxyAcid">Alpha Hydroxy Acid(AHA)</a>
-              <a href="#AzeliacAcid">AzeliacA cid</a>
+              <a href="#AzeliacAcid">AzeliacAcid</a>
               <a href="#BenzoylPeroxide">Benzoyl Peroxide</a>
               <a href="BetaHydroxyAcid">Beta Hydroxy Acid</a>
               <a href="#Glycerin">Glycerin</a>
@@ -56,17 +55,13 @@
               <a hred="#TranexmicAcid">Tranexmic Acid</a>
               <a hred="#VitaminC">Vitamin C</a>
               <a hred="#VitaminB5">Vitamin B5</a>
-              
-              <ul class="dropdown-toggle" value="Fast">
-                <li onclick="dropdown(this.innerHTML);">Fast</li>
-                <li onclick="dropdown(this.innerHTML);">Accurate</li>
-              </ul>
+
             </div>
           </div>
           <div class="dropdown">
-            <button onclick="myFunction2()" class="dropbtn2">Chemical 2</button>
+            <button onclick="myFunction()" class="dropbtn">Chemical2</button>
             <div id="myDropdown2" class="dropdown-content">
-              <input type="text" placeholder="Search.." id="myInput2" onkeyup="filterFunction2()">
+              <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
               <a href="#Accutane">Accutane</a>
               <a href="#AlphaHydroxyAcid">Alpha Hydroxy Acid(AHA)</a>
               <a href="#AzeliacAcid">AzeliacAcid</a>
@@ -87,52 +82,34 @@
             </div>
           </div>
 
-
+          <script>
+            /* When the user clicks on the button,
+            toggle between hiding and showing the dropdown content */
+            function myFunction() {
+              document.getElementById("myDropdown").classList.toggle("show");
+            }
+            
+            function filterFunction() {
+              var input, filter, ul, li, a, i;
+              input = document.getElementById("myInput");
+              filter = input.value.toUpperCase();
+              div = document.getElementById("myDropdown");
+              a = div.getElementsByTagName("a");
+              for (i = 0; i < a.length; i++) {
+                txtValue = a[i].textContent || a[i].innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                  a[i].style.display = "";
+                } else {
+                  a[i].style.display = "none";
+                }
+              }
+            }
+            </script>
         
         <form>
-            <input type="button" onclick="window.location.href='C:\Users\Wanyi Dai\Documents\Freshmen year\skincarebad\result.html';" value="compare" />
+            <input type="button" onclick="window.location.href='https://www.w3docs.com';" value="compare" />
         </form>
 
-
-    <script>  
-        function myFunction() 
-        {
-            document.getElementById("myDropdown").classList.toggle("show");
-        }
-        
-        function myFunction2() 
-        {
-            document.getElementById("myDropdown2").classList.toggle("show");
-        }
-          function filterFunction() {
-            var input, filter, ul, li, a, i;
-            input = document.getElementById("myInput");
-            filter = input.value.toUpperCase();
-            div = document.getElementById("myDropdown");
-            a = div.getElementsByTagName("a");
-            for (i = 0; i < a.length; i++) {
-              txtValue = a[i].textContent || a[i].innerText;
-              if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                a[i].style.display = "";
-              } else {
-                a[i].style.display = "none";
-              }
-            }
-          }
-          function filterFunction2() {
-            var input, filter, ul, li, a, i;
-            input = document.getElementById("myInput2");
-            filter = input.value.toUpperCase();
-            div = document.getElementById("myDropdown2");
-            a = div.getElementsByTagName("a");
-            for (i = 0; i < a.length; i++) {
-              txtValue = a[i].textContent || a[i].innerText;
-              if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                a[i].style.display = "";
-              } else {
-                a[i].style.display = "none";
-              }
-            }
 
     </body>
     <p>Our vision:
