@@ -8,10 +8,14 @@ header{
     /*box-shadow: 2px 3px 5px #ccc;*/
 }
 .header{
+    display:flex;
+    justify-content: space-between;
     width: 80%;
     padding: 10px, 0;
     margin: auto;
     background-color: aqua;
+}
+.logo{
 }
 .logo h3{ /* color of the title */
     font-size: 22px;
