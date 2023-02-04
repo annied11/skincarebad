@@ -9,13 +9,13 @@ body{ /* the size of the link */
 a{
     text-decoration:none;
 }
+
 body {
-    
-    
     background-color: #e1b0a6 ;
+    background: 
     
   }
-  /*
+  
 .container{
     position: relative;
     z-index: 1;
@@ -28,10 +28,10 @@ body {
     height: 350px;
     box-shadow: 0 5px 20px rbga(0,0,0,0.1);
 }
-*/
+
 
 h1{ /* color of the shadow of the header */
-    color: #eeece6;
+    color: #333333;
     font-family: optima;
     text-align: center;
     width:100%;
