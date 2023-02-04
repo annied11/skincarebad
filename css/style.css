@@ -9,11 +9,17 @@ body{ /* the size of the link */
 a{
     text-decoration:none;
 }
-header{ /* color of the shadow of the header */
-    display: flex;
-    width: 100%;
-    box-shadow: 2px 3px 5px #ccc;
-}
+body {
+    background-color: #e1b0a6 ;
+  }
+  
+h1{ /* color of the shadow of the header */
+    color: #eeece6;
+    font-family: optima;
+    text-align: center;
+    width:100%;
+    border-bottom:1px solid #CCC;
+     }
 .public-width{
     width: 80%;
     margin: auto;
