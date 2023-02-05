@@ -2,6 +2,10 @@
     margin: 0;
     padding: 0;
 }
+.logo {
+    position: absolute;
+    top: 20px;
+}
 header{
     height: 100vh;
     display: flex;
@@ -13,7 +17,7 @@ header{
 .container{
     position: relative;
     z-index:1;
-    background-color: azure;
+    background-color: #fff;
     border-radius: 15px;
     display: flex;
     justify-content: center;
